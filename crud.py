@@ -65,6 +65,7 @@ def get_user_detail(id):
 @app.route("/user/<id>",methods=["PUT"])
 def user_update(id):
     
+    
     user = User.query.get(id)
     
     username = request.json['username']
